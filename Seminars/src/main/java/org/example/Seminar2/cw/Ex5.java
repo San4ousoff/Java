@@ -1,2 +1,4 @@
-package org.example.Seminar2.cw;public class Ex5 {
+package org.example.Seminar2.cw;
+
+public class Ex5 {
 }

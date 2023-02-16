@@ -1,5 +1,10 @@
-package org.example.Seminar2.hw1;
+package org.example;
 
+/**
+ * Класс, содержащий методы для проверки числа по различным условиям
+ *
+ * @author Kiriakov Aleksander
+ */
 public class CheckNum {
     private int num;
 
@@ -30,11 +35,13 @@ public class CheckNum {
      * @return простое число либо 0
      */
     public int prime(int num) {
-        if (num % 2 != 0 || num % 5 != 0) {
-            for (int i = 3; i < num; i = i + 2) {
-                if (num % i == 0) {
-                    return 0;
-                }
+        if (num < 2) {
+            return 0;
+        }
+        double sqNum = Math.sqrt(num);
+        for (int i = 2; i <= sqNum; i++) {
+            if (num % i == 0) {
+                return 0;
             }
         }
         return num;
