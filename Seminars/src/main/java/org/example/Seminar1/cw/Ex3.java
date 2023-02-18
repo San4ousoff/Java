@@ -6,6 +6,7 @@ public class Ex3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
+        scanner.close();
 
         StringBuilder myNewStr = new StringBuilder();
         myNewStr.append(str.substring(str.length() / 2, str.length()))

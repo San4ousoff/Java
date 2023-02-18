@@ -18,6 +18,7 @@ public class Ex6 {
             sum += arr[i];
             resArray[i] = sum;
         }
+        sc.close();
         resArray[0] = arr[0];
         for (int i = 1; i < arr.length; i++) {
             resArray[i] = arr[i] + resArray[i - 1];

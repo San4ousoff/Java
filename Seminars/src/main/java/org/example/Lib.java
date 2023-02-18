@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -30,6 +31,7 @@ public class Lib {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите количество чисел: ");
         int num = sc.nextInt();
+        sc.close();
         int[] array = new int[num];
         for (int i = 0; i < array.length; i++) {
             do {
@@ -56,6 +58,36 @@ public class Lib {
             array[i] = random.ints(minValue, (maxValue + 1)).findFirst().getAsInt();
         }
         return array;
+    }
+
+    /**
+     *
+     * @param myArray массив
+     * @return максимальный элемент массива
+     */
+    public static int MaxElemArray(List myArray) {
+        int maxNum = (int) myArray.get(0);
+        for (int i = 0; i < myArray.size(); i++) {
+            if ((int) myArray.get(i) > maxNum) {
+                maxNum = (int) myArray.get(i);
+            }
+        }
+        return maxNum;
+    }
+
+    /**
+     *
+     * @param myArray массив
+     * @return минимальный элемент массива
+     */
+    public static int MinElemArray(List myArray) {
+        int minNum = (int) myArray.get(0);
+        for (int i = 0; i < myArray.size(); i++) {
+            if ((int) myArray.get(i) < minNum) {
+                minNum = (int) myArray.get(i);
+            }
+        }
+        return minNum;
     }
 }
 
