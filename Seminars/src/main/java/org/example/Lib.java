@@ -18,7 +18,7 @@ public class Lib {
      */
     public static String receiveStr() {
         Scanner iScanner = new Scanner(System.in);
-        System.out.printf("Строка: ");
+        System.out.printf("String: ");
         String str = iScanner.nextLine();
         iScanner.close();
         return str;

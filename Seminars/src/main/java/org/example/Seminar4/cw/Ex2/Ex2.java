@@ -1,2 +1,32 @@
-package org.example.Seminar4.cw.Ex2;public class Ex2 {
-}
+//package org.example.Seminar4.cw.Ex2;
+//
+//public class Ex2 {
+//    public static void main(String[] args) {
+//        LinkedList<Integer> linkedList = new LinkedList<>();
+//        Scanner scanner = new Scanner(System.in);
+//        int n = scanner.nextInt();
+//        for (int i = 0; i < n; i++) {
+//            linkedList.add(i);
+//        }
+//        scanner.close();
+//        //показать/достать элемент
+//        System.out.println(linkedList.peek());
+//        System.out.println("peek: "+linkedList);
+//        System.out.println(linkedList.pop());
+//        System.out.println("pop "+ linkedList);
+//        //добавление в начало / в конец
+//        linkedList.addFirst(3);
+//        System.out.println("addFirst: "+linkedList);
+//        linkedList.addLast(4);
+//        System.out.println("addLast: "+linkedList);
+//        linkedList.add(5);
+//        System.out.println("add: "+linkedList);
+//        //замена
+//        linkedList.set(0,7);
+//        System.out.println("set 7 : "+linkedList);
+//        // проверка на наличие элемента
+//        System.out.println("contains 7" +linkedList.contains(7);
+//        //удаление
+//
+//    }
+//}
