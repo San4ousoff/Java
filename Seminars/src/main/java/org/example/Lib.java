@@ -20,7 +20,16 @@ public class Lib {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("String: ");
         String str = iScanner.nextLine();
-        iScanner.close();
+        return str;
+    }
+
+    /**
+     * @return введенную пользователем строку
+     */
+    public static String receiveWord() {
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("What word to find (lowercase): ");
+        String str = iScanner.nextLine();
         return str;
     }
 

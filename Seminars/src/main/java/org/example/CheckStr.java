@@ -38,4 +38,26 @@ public class CheckStr {
         }
     }
 
+    /**
+     *
+     * @param text строка для модификации
+     * @return строку, состоящую только из слов и пробелов в нижнем регистре
+     */
+    public static String strAlphaLower(String text) {
+        String alphaText = "";
+        for (int i = 0; i < text.length(); i++) {
+            if (Character.isLetter(text.charAt(i)) || text.charAt(i)==' ') {
+                alphaText = alphaText + text.charAt(i);
+            }
+        }
+        return alphaText.toLowerCase();
+    }
+
+//    public static String[] strAlphaLowerF(String text) {
+//        text = text.trim();
+//        String delims = "//W+"; // не разобрался до конца, потом
+//        String[] tokens = text.split(delims);
+//        return tokens;
+//    }
+
 }
