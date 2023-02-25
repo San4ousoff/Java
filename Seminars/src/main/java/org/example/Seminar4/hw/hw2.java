@@ -10,7 +10,3 @@ public class hw2 {
         System.out.println(isValid(str));
     }
 }
-
-/*
-Код метода isValid для проверки по ссылке https://leetcode.com/problems/valid-parentheses/submissions/904639026/
- */
