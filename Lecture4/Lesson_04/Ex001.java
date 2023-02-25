@@ -1,15 +1,15 @@
-package Lesson_04;
+// package Lesson_04;
 
-import java.util.LinkedList;
+// import java.util.LinkedList;
 
-public class Ex001 {
-    public static void main(String[] args) {
-        LinkedList<Integer> ll = new LinkedList<Integer>();
+// public class Ex001 {
+//     public static void main(String[] args) {
+//         LinkedList<Integer> ll = new LinkedList<Integer>();
 
-        ll.add(1);
-        ll.add(2);
-        ll.add(3);
+//         ll.add(1);
+//         ll.add(2);
+//         ll.add(3);
         
-    }
+//     }
     
-}
+// }
