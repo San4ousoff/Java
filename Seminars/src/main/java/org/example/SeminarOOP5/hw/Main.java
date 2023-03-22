@@ -13,11 +13,11 @@ public class Main {
         ListOfDogs listOfDogs = new ListOfDogs();
         listOfDogs.setDogList(Arrays.asList(
                 new Dog("Бобик", 20, "Черный"),
-                new Dog("Шарик", 15, "Белый"),
+                new Dog("Шарик", 7, "Белый"),
                 new Dog("Полкан", 7, "Красный")));
         ListOfCats listOfCats = new ListOfCats();
         listOfCats.setCatList(Arrays.asList(
-                new Cat("Мурзик", 25),
+                new Cat("Мурзик", 7),
                 new Cat("Тимофей", 15),
                 new Cat("Рыжик", 20)));
 
