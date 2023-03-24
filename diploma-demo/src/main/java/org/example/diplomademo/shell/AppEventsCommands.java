@@ -5,6 +5,7 @@ import org.h2.tools.Console;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
+import org.springframework.shell.standard.ShellOption;
 
 import java.sql.SQLException;
 
@@ -26,6 +27,13 @@ public class AppEventsCommands {
         }
     }
 
+    @ShellMethod(value = "Get All Cards", key = {"gac", "getallcard"})
+    public void getAllCard() {
+        System.out.println(cardService.getAllCard().toString());
+    }
 
-
+    @ShellMethod(value = "Get Card By id", key = {"gci", "getcardbyid"})
+    public void getCardById(@ShellOption(defaultValue = "1") long id) {
+        System.out.println(cardService.getNameById(id).get());
+    }
 }
