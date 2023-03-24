@@ -11,19 +11,8 @@ import java.sql.SQLException;
 @ShellComponent
 public class AppEventsCommands {
     private final CardService cardService;
-//    private final SalePointService salePointService;
-//    private final CashbackService cashbackService;
-
     @Autowired
     public AppEventsCommands(CardService cardService) { this.cardService = cardService; }
-
-//    @Autowired
-//    public AppEventsCommands(SalePointService salePointService) { this.salePointService = salePointService; }
-//
-//    @Autowired
-//    public AppEventsCommands(CashbackService cashbackService) {
-//        this.cashbackService = cashbackService;
-//    }
 
     /**
      * Метод startConsoleH2 запускает консоль
@@ -36,6 +25,7 @@ public class AppEventsCommands {
             throw new RuntimeException(e);
         }
     }
+
 
 
 }

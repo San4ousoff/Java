@@ -10,7 +10,7 @@ values ('Автозаправка'), -- 1 <1, 3>
        ('Аптека'), -- 4 <3>
        ('Супермаркет'); -- 5 <1, 2, 3>
 
-insert into cashback (value, card_id, sale_point_id)
+insert into cashback (value_cashback, card_id, sale_point_id)
 values (5, 1, 1), -- данные для зарплатной карты
        (3, 1, 3),
        (1, 1, 5),

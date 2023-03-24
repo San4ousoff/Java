@@ -15,7 +15,7 @@ public class Cashback {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
-    @Column(name = "value")
+    @Column(name = "value_cashback")
     private Integer value;
     @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE}, fetch = FetchType.LAZY)
     @JoinColumn(name = "card_id")

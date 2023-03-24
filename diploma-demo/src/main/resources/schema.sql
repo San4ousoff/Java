@@ -11,7 +11,7 @@ create table sale_point(
 drop table if exists cashback;
 create table cashback (
     id        bigint auto_increment primary key,
-    value     varchar(255),
+    value_cashback bigint,
     card_id bigint,
     sale_point_id  bigint,
     foreign key (card_id) references card (id),
